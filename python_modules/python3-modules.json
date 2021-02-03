@@ -39,21 +39,6 @@
                     "url": "https://files.pythonhosted.org/packages/ee/ff/48bde5c0f013094d729fe4b0316ba2a24774b3ff1c52d924a8a4cb04078a/six-1.15.0-py2.py3-none-any.whl",
                     "sha256": "8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
                 }
-            ],
-            "modules": [
-                {
-                    "name": "wheel",
-                    "buildsystem": "simple",
-                    "build-commands": [
-                        "pip3 install --prefix=${FLATPAK_DEST} wheel-0.34.2-py2.py3-none-any.whl"
-                    ],
-                    "sources": [
-                        {
-                            "type": "file",
-                            "path": "wheel-0.34.2-py2.py3-none-any.whl"
-                        }
-                    ]
-                }
             ]
         },
         {

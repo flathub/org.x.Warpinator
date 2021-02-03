@@ -1,7 +1,7 @@
 {
    "app-id": "org.x.Warpinator",
    "runtime": "org.gnome.Platform",
-   "runtime-version": "3.36",
+   "runtime-version": "3.38",
    "sdk": "org.gnome.Sdk",
    "command": "warpinator",
    "finish-args": [
@@ -11,6 +11,8 @@
       "--device=dri",
       "--share=network",
       "--filesystem=home",
+      "--own-name=org.x.StatusIcon.warpinator",
+      "--talk-name=org.x.StatusIconMonitor.*",
       "--talk-name=org.freedesktop.FileManager1"
    ],
    "modules": [
@@ -19,14 +21,14 @@
          "buildsystem": "meson",
          "config-opts": [
             "-Ddesktop-id=org.x.Warpinator",
-            "-Dinclude-firewall-mod=false"
+            "-Dinclude-firewall-mod=false",
+            "-Dflatpak-build=true"
          ],
          "sources": [
             {
                "type": "git",
                "url": "https://github.com/linuxmint/warpinator.git",
-               "tag": "1.0.8",
-               "commit": "fcf7d4f535a57d7c7665b44a98ba62dff25104b1"
+               "commit": "72f8fb3d38f3e2eb8351a38dc323a46cb15a9630"
             }
          ],
          "modules": [
@@ -42,8 +44,8 @@
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/python3-xapp.git",
-                     "tag": "2.0.1",
-                     "commit": "eaaf88e65037b4b53f172cf9a37c7c208fce9d6e"
+                     "tag": "2.0.2",
+                     "commit": "a4364cc08ad561dea62b470f07d0e6771e510c4b"
                   }
                ]
             },
@@ -58,8 +60,7 @@
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/xapp.git",
-                     "tag": "1.8.9",
-                     "commit": "e9cb4c9c4909e19ff2884632d07c75dd79fc0e5a"
+                     "commit": "ef5c42e9903f91cc2d5d1537e1613f4a9aa7c4ce"
                   }
                ]
             }
