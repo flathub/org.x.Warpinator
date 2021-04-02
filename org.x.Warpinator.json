@@ -54,7 +54,7 @@
                "buildsystem": "meson",
                "config-opts": [
                   "-Dapp-lib-only=true",
-                  "-Dpy-overrides-dir=/app/lib/python3.7/site-packages/gi/overrides"
+                  "-Dpy-overrides-dir=/app/lib/python3.8/site-packages/gi/overrides"
                ],
                "sources": [
                   {
