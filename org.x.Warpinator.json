@@ -11,6 +11,7 @@
       "--device=dri",
       "--share=network",
       "--filesystem=home",
+      "--filesystem=/media",
       "--own-name=org.x.StatusIcon.warpinator",
       "--talk-name=org.x.StatusIconMonitor.*",
       "--talk-name=org.freedesktop.FileManager1"
