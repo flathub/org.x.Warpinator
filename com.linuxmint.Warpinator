@@ -1,5 +1,5 @@
 {
-   "app-id": "org.x.Warpinator",
+   "app-id": "com.linuxmint.Warpinator",
    "runtime": "org.gnome.Platform",
    "runtime-version": "3.38",
    "sdk": "org.gnome.Sdk",
@@ -21,7 +21,7 @@
          "name": "warpinator",
          "buildsystem": "meson",
          "config-opts": [
-            "-Ddesktop-id=org.x.Warpinator",
+            "-Ddesktop-id=com.linuxmint.Warpinator",
             "-Dinclude-firewall-mod=false",
             "-Dflatpak-build=true"
          ],
