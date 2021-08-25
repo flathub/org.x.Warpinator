@@ -21,7 +21,6 @@
          "name": "warpinator",
          "buildsystem": "meson",
          "config-opts": [
-            "-Ddesktop-id=org.x.Warpinator",
             "-Dinclude-firewall-mod=false",
             "-Dflatpak-build=true"
          ],
@@ -29,7 +28,7 @@
             {
                "type": "git",
                "url": "https://github.com/linuxmint/warpinator.git",
-               "commit": "72f8fb3d38f3e2eb8351a38dc323a46cb15a9630"
+               "commit": "04036593505915aa63e4396a90ccdf1c4d371315"
             }
          ],
          "modules": [

@@ -69,8 +69,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/f8/e7/d97b10e786aaf74d2e55e5b7bfb193d08e7459742bf051fdbcf5501575c7/zeroconf-0.28.0-py3-none-any.whl",
-                    "sha256": "8c448ad37ed074ce8811c9eb2765c01714a93f977a1c04fc39fbf6f516b0566f"
+                    "url": "https://files.pythonhosted.org/packages/8b/7f/d62f46a53932d2ef1ad9600be390ab8cb637160c14f9b980f19ed278e739/zeroconf-0.29.0-py3-none-any.whl",
+                    "sha256": "85fdeeef88b08965ab87559177457cfdb5dd2e4bc62a476208c2473a51dfa0b2"
                 }
             ]
         },
