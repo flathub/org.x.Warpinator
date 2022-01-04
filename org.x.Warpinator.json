@@ -28,7 +28,8 @@
             {
                "type": "git",
                "url": "https://github.com/linuxmint/warpinator.git",
-               "commit": "729d0141537bc38d3e7afa550aaf69baf65533d0"
+               "tag": "1.2.9",
+               "commit": "6a0f2e4de63378682bdf79c2153c6dbac7f31441"
             }
          ],
          "modules": [
@@ -44,8 +45,8 @@
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/python3-xapp.git",
-                     "tag": "2.0.2",
-                     "commit": "a4364cc08ad561dea62b470f07d0e6771e510c4b"
+                     "tag": "2.2.1",
+                     "commit": "7498934c4eb8da341ae782bf4fa6b8219866d7e1"
                   }
                ]
             },
@@ -60,7 +61,8 @@
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/xapp.git",
-                     "commit": "ef5c42e9903f91cc2d5d1537e1613f4a9aa7c4ce"
+                     "tag": "2.2.8",
+                     "commit": "f62739e4f341ef831387e72af36b62fff8268f77"
                   }
                ]
             }
