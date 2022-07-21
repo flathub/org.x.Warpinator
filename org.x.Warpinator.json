@@ -35,6 +35,22 @@
             }
          ],
          "modules": [
+         {
+               "name":"protobuf",
+               "cleanup":[
+                  "protoc",
+                  "/bin",
+                  "/doc",
+                  "/lib/plugins"
+               ],
+               "sources":[
+                  {
+                     "type":"archive",
+                     "url":"https://github.com/protocolbuffers/protobuf/releases/download/v21.2/protobuf-cpp-3.21.2.tar.gz",
+                     "sha256":"c8944d00f72d850c91f1873213b09724c74a798ba3d5c23dc3c39f279a25c7d4"
+                  }
+               ]
+            },
             "python3-modules.json",
             {
                "name": "python-xapp",
