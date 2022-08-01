@@ -1,8 +1,11 @@
 {
    "app-id": "org.x.Warpinator",
    "runtime": "org.gnome.Platform",
-   "runtime-version": "3.38",
+   "runtime-version": "42",
    "sdk": "org.gnome.Sdk",
+   "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.rust-stable"
+    ],
    "command": "warpinator",
    "finish-args": [
       "--share=ipc",
@@ -28,12 +31,27 @@
             {
                "type": "git",
                "url": "https://github.com/linuxmint/warpinator.git",
-               "tag": "1.2.9",
-               "commit": "6a0f2e4de63378682bdf79c2153c6dbac7f31441"
+               "tag": "1.2.12"
             }
          ],
          "modules": [
-            "python_modules/python3-modules.json",
+         {
+               "name":"protobuf",
+               "cleanup":[
+                  "protoc",
+                  "/bin",
+                  "/doc",
+                  "/lib/plugins"
+               ],
+               "sources":[
+                  {
+                     "type":"archive",
+                     "url":"https://github.com/protocolbuffers/protobuf/releases/download/v21.2/protobuf-cpp-3.21.2.tar.gz",
+                     "sha256":"c8944d00f72d850c91f1873213b09724c74a798ba3d5c23dc3c39f279a25c7d4"
+                  }
+               ]
+            },
+            "python3-modules.json",
             {
                "name": "python-xapp",
                "buildsystem": "simple",
@@ -45,8 +63,7 @@
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/python3-xapp.git",
-                     "tag": "2.2.1",
-                     "commit": "7498934c4eb8da341ae782bf4fa6b8219866d7e1"
+                     "tag": "2.2.2"
                   }
                ]
             },
@@ -55,14 +72,13 @@
                "buildsystem": "meson",
                "config-opts": [
                   "-Dapp-lib-only=true",
-                  "-Dpy-overrides-dir=/app/lib/python3.8/site-packages/gi/overrides"
+                  "-Dpy-overrides-dir=/app/lib/python3.9/site-packages/gi/overrides"
                ],
                "sources": [
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/xapp.git",
-                     "tag": "2.2.8",
-                     "commit": "f62739e4f341ef831387e72af36b62fff8268f77"
+                     "tag": "2.2.13"
                   }
                ]
             }
