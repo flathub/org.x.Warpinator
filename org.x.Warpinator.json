@@ -31,7 +31,8 @@
             {
                "type": "git",
                "url": "https://github.com/linuxmint/warpinator.git",
-               "tag": "1.2.12"
+               "tag": "1.2.14",
+               "commit": "998983af10e0df6097640af34fd1d4ac96a113fc"
             }
          ],
          "modules": [
@@ -46,8 +47,8 @@
                "sources":[
                   {
                      "type":"archive",
-                     "url":"https://github.com/protocolbuffers/protobuf/releases/download/v21.2/protobuf-cpp-3.21.2.tar.gz",
-                     "sha256":"c8944d00f72d850c91f1873213b09724c74a798ba3d5c23dc3c39f279a25c7d4"
+                     "url":"https://github.com/protocolbuffers/protobuf/releases/download/v21.5/protobuf-cpp-3.21.5.tar.gz",
+                     "sha256":"58c8a18b4ec22655535c493155c5465a8903e8249094ceead87e00763bdbc44f"
                   }
                ]
             },
@@ -63,7 +64,8 @@
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/python3-xapp.git",
-                     "tag": "2.2.2"
+                     "tag": "2.2.2",
+                     "commit": "ae2fb1208c69f822aa9ece0a9afde51c56ab2e6f"
                   }
                ]
             },
@@ -78,7 +80,8 @@
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/xapp.git",
-                     "tag": "2.2.13"
+                     "tag": "2.2.15",
+                     "commit": "493bcde1dacaca0cdcef8a789a8e5c42e9f13792"
                   }
                ]
             }
