@@ -7,13 +7,13 @@
             "name": "python3-grpcio",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"grpcio\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"grpcio==1.44.0\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e2/13/0f91c6c7eb0d934141743c7663e8808f4dc478dd0a7b0fd2a02a286c0d6d/grpcio-1.48.1.tar.gz",
-                    "sha256": "660217eccd2943bf23ea9a36e2a292024305aec04bf747fbcff1f5032b83610e"
+                    "url": "https://files.pythonhosted.org/packages/65/75/8b706e1170e2c7b6242b1675259e47986bb4fc490f29387989a965972e6e/grpcio-1.44.0.tar.gz",
+                    "sha256": "4bae1c99896045d3062ab95478411c8d5a52cb84b91a1517312629fa6cfeb50e"
                 }
             ]
         },
