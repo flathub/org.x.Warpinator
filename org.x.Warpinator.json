@@ -57,8 +57,8 @@
                "name": "python-xapp",
                "buildsystem": "simple",
                "build-commands": [
-                  "python3 setup.py build",
-                  "python3 setup.py install --prefix=/app"
+                  "SETUPTOOLS_USE_DISTUTILS=stdlib python3 setup.py build",
+                  "SETUPTOOLS_USE_DISTUTILS=stdlib python3 setup.py install --prefix=/app"
                ],
                "sources": [
                   {
