@@ -1,7 +1,7 @@
 {
    "app-id": "org.x.Warpinator",
    "runtime": "org.gnome.Platform",
-   "runtime-version": "42",
+   "runtime-version": "43",
    "sdk": "org.gnome.Sdk",
    "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -47,8 +47,8 @@
                "sources":[
                   {
                      "type":"archive",
-                     "url":"https://github.com/protocolbuffers/protobuf/releases/download/v21.5/protobuf-cpp-3.21.5.tar.gz",
-                     "sha256":"58c8a18b4ec22655535c493155c5465a8903e8249094ceead87e00763bdbc44f"
+                     "url":"https://github.com/protocolbuffers/protobuf/releases/download/v21.7/protobuf-cpp-3.21.7.tar.gz",
+                     "sha256":"70de993af0b4f2ddacce59e62ba6d7b7e48faf48beb1b0d5f1ac0e1fb0a68423"
                   }
                ]
             },
@@ -74,7 +74,7 @@
                "buildsystem": "meson",
                "config-opts": [
                   "-Dapp-lib-only=true",
-                  "-Dpy-overrides-dir=/app/lib/python3.9/site-packages/gi/overrides"
+                  "-Dpy-overrides-dir=/app/lib/python3.10/site-packages/gi/overrides"
                ],
                "sources": [
                   {
