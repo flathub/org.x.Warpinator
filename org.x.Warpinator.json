@@ -55,17 +55,12 @@
             "python3-modules.json",
             {
                "name": "python-xapp",
-               "buildsystem": "simple",
-               "build-commands": [
-                  "SETUPTOOLS_USE_DISTUTILS=stdlib python3 setup.py build",
-                  "SETUPTOOLS_USE_DISTUTILS=stdlib python3 setup.py install --prefix=/app"
-               ],
+               "buildsystem": "meson",
                "sources": [
                   {
                      "type": "git",
-                     "url": "https://github.com/linuxmint/python3-xapp.git",
-                     "tag": "2.2.2",
-                     "commit": "ae2fb1208c69f822aa9ece0a9afde51c56ab2e6f"
+                     "url": "https://github.com/linuxmint/python-xapp.git",
+                     "commit": "052da5e56e3ca2e4c5f2bf905b66e316289ffd1d"
                   }
                ]
             },
