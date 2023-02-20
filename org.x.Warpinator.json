@@ -31,8 +31,8 @@
             {
                "type": "git",
                "url": "https://github.com/linuxmint/warpinator.git",
-               "tag": "1.4.4",
-               "commit": "34b18a19e4208da517668bf11f09c9e562f6ccc3"
+               "tag": "1.4.5",
+               "commit": "7390641ca1a7b4b80eaa748af64fc0d9accb9857"
             }
          ],
          "modules": [
