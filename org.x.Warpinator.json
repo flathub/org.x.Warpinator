@@ -47,8 +47,8 @@
                "sources":[
                   {
                      "type":"archive",
-                     "url":"https://github.com/protocolbuffers/protobuf/releases/download/v21.7/protobuf-cpp-3.21.7.tar.gz",
-                     "sha256":"70de993af0b4f2ddacce59e62ba6d7b7e48faf48beb1b0d5f1ac0e1fb0a68423"
+                     "url":"https://github.com/protocolbuffers/protobuf/releases/download/v21.12/protobuf-cpp-3.21.12.tar.gz",
+                     "sha256":"4eab9b524aa5913c6fffb20b2a8abf5ef7f95a80bc0701f3a6dbb4c607f73460"
                   }
                ]
             },
@@ -75,8 +75,8 @@
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/xapp.git",
-                     "tag": "2.2.15",
-                     "commit": "493bcde1dacaca0cdcef8a789a8e5c42e9f13792"
+                     "tag": "2.4.3",
+                     "commit": "c0658ed67e0998e053de25108fedca4718165c4a"
                   }
                ]
             }

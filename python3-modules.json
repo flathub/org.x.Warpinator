@@ -21,13 +21,13 @@
             "name": "python3-protobuf",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"protobuf\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"protobuf==4.21.12\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/56/23/f716074d2ed0af82c0d1da1eaa5e4bb086236568405f13ab0bbaaa6307fb/protobuf-4.21.7.tar.gz",
-                    "sha256": "71d9dba03ed3432c878a801e2ea51e034b0ea01cf3a4344fb60166cb5f6c8757"
+                    "url": "https://files.pythonhosted.org/packages/ba/dd/f8a01b146bf45ac12a829bbc599e6590aa6a6849ace7d28c42d77041d6ab/protobuf-4.21.12.tar.gz",
+                    "sha256": "7cd532c4566d0e6feafecc1059d04c7915aec8e182d1cf7adee8b24ef1e2e6ab"
                 }
             ]
         },
@@ -49,14 +49,9 @@
             "name": "python3-zeroconf",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"zeroconf\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"zeroconf==0.39.4\" --no-build-isolation"
             ],
             "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/9c/1f/19ebc343cc71a7ffa78f17018535adc5cbdd87afb31d7c34874680148b32/ifaddr-0.2.0-py3-none-any.whl",
-                    "sha256": "085e0305cfe6f16ab12d72e2024030f5d52674afad6911bb1eee207177b8a748"
-                },
                 {
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/d6/c1/8991e7c5385b897b8c020cdaad718c5b087a6626d1d11a23e1ea87e325a7/async_timeout-4.0.2-py3-none-any.whl",
@@ -64,8 +59,13 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6b/43/4e0e4aeab5ded6563ccb526678377c9d0e19b40d1fe3f53c236dd4c8f806/zeroconf-0.39.1-py3-none-any.whl",
-                    "sha256": "430806d36002b72a45176e2e2d29856195e9286ec620dbdecd124431812a87ef"
+                    "url": "https://files.pythonhosted.org/packages/9c/1f/19ebc343cc71a7ffa78f17018535adc5cbdd87afb31d7c34874680148b32/ifaddr-0.2.0-py3-none-any.whl",
+                    "sha256": "085e0305cfe6f16ab12d72e2024030f5d52674afad6911bb1eee207177b8a748"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/3f/ff/a8d7faaa3573b6e4c775cacbf911a0afbcb4928ce71b3de43119227a396a/zeroconf-0.39.4-py3-none-any.whl",
+                    "sha256": "d60eae9e9c99d1a168ce9ff9de7e7398c23754a0c2004ded230f8d529c5260a0"
                 }
             ]
         },
@@ -78,13 +78,18 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6c/10/a7d0fa5baea8fe7b50f448ab742f26f52b80bfca85ac2be9d35cdd9a3246/pyparsing-3.0.9-py3-none-any.whl",
-                    "sha256": "5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc"
+                    "url": "https://files.pythonhosted.org/packages/ed/35/a31aed2993e398f6b09a790a181a7927eb14610ee8bbf02dc14d31677f1c/packaging-23.0-py3-none-any.whl",
+                    "sha256": "714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ed/d6/2afc375a8d55b8be879d6b4986d4f69f01115e795e36827fd3a40166028b/typing_extensions-4.3.0-py3-none-any.whl",
-                    "sha256": "25642c956049920a5aa49edcdd6ab1e06d7e5d467fc00e0506c44ac86fbfca02"
+                    "url": "https://files.pythonhosted.org/packages/0b/fc/8781442def77b0aa22f63f266d4dadd486ebc0c5371d6290caf4320da4b7/setuptools-67.6.1-py3-none-any.whl",
+                    "sha256": "e728ca814a823bf7bf60162daf9db95b93d532948c4c0bea762ce62f60189078"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/1d/66/8f42c941be949ef2b22fe905d850c794e7c170a526023612aad5f3a121ad/setuptools_scm-7.1.0-py3-none-any.whl",
+                    "sha256": "73988b6d848709e2af142aa48c986ea29592bbcfca5375678064708205253d8e"
                 },
                 {
                     "type": "file",
@@ -93,13 +98,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/05/8e/8de486cbd03baba4deef4142bd643a3e7bbe954a784dc1bb17142572d127/packaging-21.3-py3-none-any.whl",
-                    "sha256": "ef103e05f519cdc783ae24ea4e2e0f508a9c99b2d4969652eed6a2e1ea5bd522"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/01/ed/75a20e7b075e8ecb1f84e8debf833917905d8790b78008915bd68dddd5c4/setuptools_scm-7.0.5-py3-none-any.whl",
-                    "sha256": "7930f720905e03ccd1e1d821db521bff7ec2ac9cf0ceb6552dd73d24a45d3b02"
+                    "url": "https://files.pythonhosted.org/packages/31/25/5abcd82372d3d4a3932e1fa8c3dbf9efac10cc7c0d16e78467460571b404/typing_extensions-4.5.0-py3-none-any.whl",
+                    "sha256": "fb33085c39dd998ac16d1431ebc293a8b3eedd00fd4a32de0ff79002c19511b4"
                 }
             ]
         },
@@ -112,8 +112,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ed/d6/2afc375a8d55b8be879d6b4986d4f69f01115e795e36827fd3a40166028b/typing_extensions-4.3.0-py3-none-any.whl",
-                    "sha256": "25642c956049920a5aa49edcdd6ab1e06d7e5d467fc00e0506c44ac86fbfca02"
+                    "url": "https://files.pythonhosted.org/packages/31/25/5abcd82372d3d4a3932e1fa8c3dbf9efac10cc7c0d16e78467460571b404/typing_extensions-4.5.0-py3-none-any.whl",
+                    "sha256": "fb33085c39dd998ac16d1431ebc293a8b3eedd00fd4a32de0ff79002c19511b4"
                 }
             ]
         },
@@ -140,18 +140,23 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ed/d6/2afc375a8d55b8be879d6b4986d4f69f01115e795e36827fd3a40166028b/typing_extensions-4.3.0-py3-none-any.whl",
-                    "sha256": "25642c956049920a5aa49edcdd6ab1e06d7e5d467fc00e0506c44ac86fbfca02"
-                },
-                {
-                    "type": "file",
                     "url": "https://files.pythonhosted.org/packages/6a/23/8146aad7d88f4fcb3a6218f41a60f6c2d4e3a72de72da1825dc7c8f7877c/semantic_version-2.10.0-py2.py3-none-any.whl",
                     "sha256": "de78a3b8e0feda74cabc54aab2da702113e33ac9d9eb9d2389bcf1f58b7d9177"
                 },
                 {
                     "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/0b/fc/8781442def77b0aa22f63f266d4dadd486ebc0c5371d6290caf4320da4b7/setuptools-67.6.1-py3-none-any.whl",
+                    "sha256": "e728ca814a823bf7bf60162daf9db95b93d532948c4c0bea762ce62f60189078"
+                },
+                {
+                    "type": "file",
                     "url": "https://files.pythonhosted.org/packages/ef/da/dca8f90986325abe3027a5e3af5e12ce1d78eeb664a11971b2e7e703b9e3/setuptools_rust-1.5.2-py3-none-any.whl",
                     "sha256": "8eb45851e34288f2296cd5ab9e924535ac1757318b730a13fe6836867843f206"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/31/25/5abcd82372d3d4a3932e1fa8c3dbf9efac10cc7c0d16e78467460571b404/typing_extensions-4.5.0-py3-none-any.whl",
+                    "sha256": "fb33085c39dd998ac16d1431ebc293a8b3eedd00fd4a32de0ff79002c19511b4"
                 }
             ]
         },
@@ -164,13 +169,13 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl",
-                    "sha256": "8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"
+                    "url": "https://files.pythonhosted.org/packages/2b/a8/050ab4f0c3d4c1b8aaa805f70e26e84d0e27004907c5b8ecc1d31815f92a/cffi-1.15.1.tar.gz",
+                    "sha256": "d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/2b/a8/050ab4f0c3d4c1b8aaa805f70e26e84d0e27004907c5b8ecc1d31815f92a/cffi-1.15.1.tar.gz",
-                    "sha256": "d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9"
+                    "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl",
+                    "sha256": "8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"
                 }
             ]
         },
@@ -191,18 +196,18 @@
                 "cargo-sources.json",
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl",
-                    "sha256": "8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"
-                },
-                {
-                    "type": "file",
                     "url": "https://files.pythonhosted.org/packages/2b/a8/050ab4f0c3d4c1b8aaa805f70e26e84d0e27004907c5b8ecc1d31815f92a/cffi-1.15.1.tar.gz",
                     "sha256": "d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6d/0c/5e67831007ba6cd7e52c4095f053cf45c357739b0a7c46a45ddd50049019/cryptography-38.0.1.tar.gz",
-                    "sha256": "1db3d807a14931fa317f96435695d9ec386be7b84b618cc61cfa5d08b0ae33d7"
+                    "url": "https://files.pythonhosted.org/packages/15/d9/c679e9eda76bfc0d60c9d7a4084ca52d0631d9f24ef04f818012f6d1282e/cryptography-40.0.1.tar.gz",
+                    "sha256": "2803f2f8b1e95f614419926c7e6f55d828afc614ca5ed61543877ae668cc3472"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl",
+                    "sha256": "8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"
                 }
             ]
         },
@@ -215,8 +220,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl",
-                    "sha256": "8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"
+                    "url": "https://files.pythonhosted.org/packages/a7/22/27582568be639dfe22ddb3902225f91f2f17ceff88ce80e4db396c8986da/PyNaCl-1.5.0.tar.gz",
+                    "sha256": "8ac7448f09ab85811607bdd21ec2464495ac8b7c66d146bf545b0f08fb9220ba"
                 },
                 {
                     "type": "file",
@@ -225,8 +230,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a7/22/27582568be639dfe22ddb3902225f91f2f17ceff88ce80e4db396c8986da/PyNaCl-1.5.0.tar.gz",
-                    "sha256": "8ac7448f09ab85811607bdd21ec2464495ac8b7c66d146bf545b0f08fb9220ba"
+                    "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl",
+                    "sha256": "8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"
                 }
             ]
         },
@@ -253,13 +258,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6c/10/a7d0fa5baea8fe7b50f448ab742f26f52b80bfca85ac2be9d35cdd9a3246/pyparsing-3.0.9-py3-none-any.whl",
-                    "sha256": "5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/05/8e/8de486cbd03baba4deef4142bd643a3e7bbe954a784dc1bb17142572d127/packaging-21.3-py3-none-any.whl",
-                    "sha256": "ef103e05f519cdc783ae24ea4e2e0f508a9c99b2d4969652eed6a2e1ea5bd522"
+                    "url": "https://files.pythonhosted.org/packages/ed/35/a31aed2993e398f6b09a790a181a7927eb14610ee8bbf02dc14d31677f1c/packaging-23.0-py3-none-any.whl",
+                    "sha256": "714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2"
                 }
             ]
         }
