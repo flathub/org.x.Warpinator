@@ -14,7 +14,7 @@
       "--device=dri",
       "--share=network",
       "--filesystem=home",
-      "--filesystem=/media",
+      "--filesystem=/media:ro",
       "--own-name=org.x.StatusIcon.warpinator",
       "--talk-name=org.x.StatusIconMonitor.*",
       "--talk-name=org.freedesktop.FileManager1"
@@ -31,8 +31,7 @@
             {
                "type": "git",
                "url": "https://github.com/linuxmint/warpinator.git",
-               "tag": "1.4.5",
-               "commit": "7390641ca1a7b4b80eaa748af64fc0d9accb9857"
+               "commit": "537c9d592d24796417f7555bdb74f52bb6600602"
             }
          ],
          "modules": [
