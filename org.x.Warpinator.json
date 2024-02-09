@@ -1,7 +1,7 @@
 {
    "app-id": "org.x.Warpinator",
    "runtime": "org.gnome.Platform",
-   "runtime-version": "44",
+   "runtime-version": "45",
    "sdk": "org.gnome.Sdk",
    "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -31,26 +31,10 @@
             {
                "type": "git",
                "url": "https://github.com/linuxmint/warpinator.git",
-               "commit": "896a0aea4e97f76adb72729050c776ed6a86de6d"
+               "commit": "3eb3ff994fc33a7891c79a4ce4e5090997db2677"
             }
          ],
          "modules": [
-         {
-               "name":"protobuf",
-               "cleanup":[
-                  "protoc",
-                  "/bin",
-                  "/doc",
-                  "/lib/plugins"
-               ],
-               "sources":[
-                  {
-                     "type":"archive",
-                     "url":"https://github.com/protocolbuffers/protobuf/releases/download/v21.12/protobuf-cpp-3.21.12.tar.gz",
-                     "sha256":"4eab9b524aa5913c6fffb20b2a8abf5ef7f95a80bc0701f3a6dbb4c607f73460"
-                  }
-               ]
-            },
             "python3-modules.json",
             {
                "name": "python-xapp",
@@ -74,8 +58,8 @@
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/xapp.git",
-                     "tag": "2.4.3",
-                     "commit": "c0658ed67e0998e053de25108fedca4718165c4a"
+                     "tag": "2.8.2",
+                     "commit": "97ce8df48a198b374aa74c68543ce6c0d79b61e8"
                   }
                ]
             }
