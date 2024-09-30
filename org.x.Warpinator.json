@@ -30,8 +30,9 @@
          "sources": [
             {
                "type": "git",
+               "tag": "1.8.6",
                "url": "https://github.com/linuxmint/warpinator.git",
-               "commit": "3eb3ff994fc33a7891c79a4ce4e5090997db2677"
+               "commit": "34413b665559c96f8ccc4bff5856d180e02777f6"
             }
          ],
          "modules": [
@@ -58,8 +59,8 @@
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/xapp.git",
-                     "tag": "2.8.2",
-                     "commit": "97ce8df48a198b374aa74c68543ce6c0d79b61e8"
+                     "tag": "2.8.5",
+                     "commit": "3c85263447770597aa6e6d26b21bffba67b81186"
                   }
                ]
             }
