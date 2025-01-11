@@ -1,7 +1,7 @@
 {
    "app-id": "org.x.Warpinator",
    "runtime": "org.gnome.Platform",
-   "runtime-version": "45",
+   "runtime-version": "47",
    "sdk": "org.gnome.Sdk",
    "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -25,14 +25,19 @@
          "buildsystem": "meson",
          "config-opts": [
             "-Dinclude-firewall-mod=false",
-            "-Dflatpak-build=true"
+            "-Dflatpak-build=true",
+            "-Dbundle-grpc=true"
          ],
          "sources": [
             {
                "type": "git",
-               "tag": "1.8.6",
+               "tag": "1.8.8",
                "url": "https://github.com/linuxmint/warpinator.git",
-               "commit": "34413b665559c96f8ccc4bff5856d180e02777f6"
+               "commit": "888640147fa9e1438ee9e0842006cd9f2ddd606a",
+               "x-checker-data": {
+                  "type": "git",
+                  "tag-pattern": "^([\\d.]+)$"
+               }
             }
          ],
          "modules": [
@@ -44,7 +49,12 @@
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/python-xapp.git",
-                     "commit": "052da5e56e3ca2e4c5f2bf905b66e316289ffd1d"
+                     "tag": "2.4.2",
+                     "commit": "e97e119d483b849bd833d7900f76c4ee20af2838",
+                     "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                     }
                   }
                ]
             },
@@ -53,14 +63,18 @@
                "buildsystem": "meson",
                "config-opts": [
                   "-Dapp-lib-only=true",
-                  "-Dpy-overrides-dir=/app/lib/python3.10/site-packages/gi/overrides"
+                  "-Dpy-overrides-dir=/app/lib/python3.12/site-packages/gi/overrides"
                ],
                "sources": [
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/xapp.git",
-                     "tag": "2.8.5",
-                     "commit": "3c85263447770597aa6e6d26b21bffba67b81186"
+                     "tag": "2.8.8",
+                     "commit": "17c45eb8e68aaeea386d5e299e16379d26ba141a",
+                     "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                     }
                   }
                ]
             }
