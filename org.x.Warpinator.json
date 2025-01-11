@@ -26,7 +26,7 @@
          "config-opts": [
             "-Dinclude-firewall-mod=false",
             "-Dflatpak-build=true",
-            "-Dbundle-grpc=true"
+            "-Dbundle-grpc=false"
          ],
          "sources": [
             {
