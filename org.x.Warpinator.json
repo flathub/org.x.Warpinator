@@ -1,11 +1,8 @@
 {
    "app-id": "org.x.Warpinator",
    "runtime": "org.gnome.Platform",
-   "runtime-version": "45",
+   "runtime-version": "49",
    "sdk": "org.gnome.Sdk",
-   "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.rust-stable"
-    ],
    "command": "warpinator",
    "finish-args": [
       "--share=ipc",
@@ -30,9 +27,13 @@
          "sources": [
             {
                "type": "git",
-               "tag": "1.8.6",
+               "tag": "2.0.3",
                "url": "https://github.com/linuxmint/warpinator.git",
-               "commit": "34413b665559c96f8ccc4bff5856d180e02777f6"
+               "commit": "d51681b2f580c4cad13d9c59af40a2952401d195"
+            },
+            {
+               "type": "patch",
+               "path": "0001-python-3.13-be-compatible-with-socket-ipv6-changes.patch"
             }
          ],
          "modules": [
@@ -44,7 +45,8 @@
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/python-xapp.git",
-                     "commit": "052da5e56e3ca2e4c5f2bf905b66e316289ffd1d"
+                     "tag": "3.0.2",
+                     "commit": "83bf6f48ebf7314ae2be6450b7987f0422816f54"
                   }
                ]
             },
@@ -53,14 +55,14 @@
                "buildsystem": "meson",
                "config-opts": [
                   "-Dapp-lib-only=true",
-                  "-Dpy-overrides-dir=/app/lib/python3.10/site-packages/gi/overrides"
+                  "-Dpy-overrides-dir=/app/lib/python3.13/site-packages/gi/overrides"
                ],
                "sources": [
                   {
                      "type": "git",
                      "url": "https://github.com/linuxmint/xapp.git",
-                     "tag": "2.8.5",
-                     "commit": "3c85263447770597aa6e6d26b21bffba67b81186"
+                     "tag": "3.2.2",
+                     "commit": "913b2a2b441ec24daf3aa92e2863cc40e1c43650"
                   }
                ]
             }
@@ -70,7 +72,6 @@
    "cleanup": [
       "/bin/wheel",
       "/include",
-      "/lib/debug/source",
       "/lib/pkgconfig",
       "/share/gir-1.0",
       "/share/vala",
