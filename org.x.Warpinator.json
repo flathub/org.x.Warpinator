@@ -65,6 +65,18 @@
                      "commit": "913b2a2b441ec24daf3aa92e2863cc40e1c43650"
                   }
                ]
+            },
+            {
+               "name": "xapp-symbolic-icons",
+               "buildsystem": "meson",
+               "sources": [
+                  {
+                     "type": "git",
+                     "url": "https://github.com/xapp-project/xapp-symbolic-icons.git",
+                     "tag": "1.0.9",
+                     "commit": "aa111eabcb8ca3d86d23f819b220976d3752efc2"
+                  }
+               ]
             }
          ]
       }
