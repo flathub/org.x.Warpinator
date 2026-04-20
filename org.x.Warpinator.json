@@ -27,9 +27,8 @@
          "sources": [
             {
                "type": "git",
-               "tag": "2.0.3",
                "url": "https://github.com/linuxmint/warpinator.git",
-               "commit": "d51681b2f580c4cad13d9c59af40a2952401d195"
+               "commit": "e07443c4afab3e69d9dcd2efbf523ef8b78faf40"
             },
             {
                "type": "patch",
